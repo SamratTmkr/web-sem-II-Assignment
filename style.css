@@ -100,14 +100,12 @@ footer {
 /* global end */
 
 
-
+/* oindex start */
 
 /* ===================== */
 /* Hero Section */
 /* ===================== */
-.hero-section>* {
-  min-width: 0;
-}
+
 
 .hero-section {
   display: grid;
@@ -115,7 +113,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 
 .hero-content {
   display: flex;
@@ -366,4 +363,134 @@ gap: 12px;
   margin: 12px;
   font-family: "Brush Script MT", "Brush Script Std", cursive;
 
+}
+
+/* about me */
+
+
+.aboutmemain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aboutme span {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.aboutmemain button {
+  padding: 12px 24px;
+  color: var(--bg-primary);
+  background-color: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.aboutmemain button:hover {
+  background-color: var(--accent-hover);
+}
+
+.mainaboutgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.mainbox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* changed from beige → glass dark */
+.aboutbox {
+  min-height: 150px;
+  display: grid;
+  gap: 16px;
+  color: var(--text-primary);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.number {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+
+
+.vision {
+  margin: 80px 0;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+  border: 1px solid var(--border);
+}
+
+.vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.vision-intro {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+}
+
+/* Vision points grid */
+.vision-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* Individual vision item */
+.vision-item {
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.vision-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.vision-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
 }
