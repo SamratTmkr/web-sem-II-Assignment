@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
     <title>Portfolio website</title>
@@ -15,28 +15,31 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="./images/samratlogo.png" alt="" height="80px" width="72px">
+            <img src="./images/samratlogo.png" alt="" height="80" width="72">
         </div>
         <ul>
             <li class="active">
-            <a href="index.html">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-            <a href="project.html">Projects</a>
+                <a href="project.html">Projects</a>
 
             </li>
-            <li>About Me</li>
-            <li>SiteReport</li>
+            <li>
+                <a href="aboutme.html">Aboutme</a>
+            </li>
+            <li>
+                <a href="sitereport.html">Site Report</a>
+            </li>
         </ul>
-        <button>
-            Contact Me
-        </button>
+        <a href="contact.html" class="btn">Contact</a>
+
     </nav>
     <!-- hero section -->
     <div class="hero-section">
 
         <div class="hero-content">
-            
+
             <span>HEY THERE!</span>
             <span>I AM SAMRAT TAMRAKAR</span>
             <span>DIGITAL MARKETER</span>
@@ -48,11 +51,10 @@
                 <i class="fa-brands fa-facebook"></i>
             </div>
 
-            <button class="portfoliobtn">
-                <a href="portfolio.html">
-                    SEE MY WORK
-                </a>
-            </button>
+            <a href="portfolio.html" class="btn">
+                SEE MY WORK
+            </a>
+
 
         </div>
         <div class="imgpic">
@@ -68,7 +70,7 @@
         <div class="glass-card">
             <div>
                 <div class="icon-box">
-                   <i class="fa-solid fa-gears"></i>
+                    <i class="fa-solid fa-gears"></i>
                 </div>
                 <h3>Automation & Opt.</h3>
             </div>
@@ -128,10 +130,43 @@
 
     </div>
 
-    <footer>
-        footer to b e kept
-    </footer>
+    <footer class="site-footer">
 
+        <div class="footer-grid">
+
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>This website was created as part of a web development module and demonstrates layout, validation, and
+                    responsive design.</p>
+            </div>
+
+
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Site Report</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: samrat.20251089@nami.edu.np</p>
+                <p>Location:Lalitpur, Nepal</p>
+                <p>Contact: +977 9761690767</p>
+            </div>
+
+
+        </div>
+
+
+        <p class="footer-copy">© 2026 Samrat Tamrakar. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
