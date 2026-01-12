@@ -10,122 +10,148 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <nav>
         <div class="logo">
-            <img src="./images/samratlogo.png" alt="Logo" height="80" width="72" >
+            <img src="./images/samratlogo.png" alt="Logo" height="80" width="72">
         </div>
 
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
-            <li><a href="aboutme.html">Aboutme</a></li>
-            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li class="active"><a href="sitereport.html">Site Report</a></li>
         </ul>
 
         <a href="contact.html" class="btn">Contact</a>
+        <a href="hamburgeropen.html" class="hamburgericon"><i class="fa-solid fa-bars"></i></a>
     </nav>
 
-   <!-- Report Container -->
-    <div class="site-hero-section">
+    <!-- Report Container -->
+    <div class="sitereporthero">
 
-        <div class="site-hero-title">
+        <div class="sitereporttitle">
             <p>SITE REPORT</p>
         </div>
 
         <!-- Reflective Discussion -->
-        <div class="site-glass-card">
-            <div class="site-card-header">
-                <div class="site-icon-box">
+        <div class="sitereportcard">
+            <div class="sitereportheader">
+                <div class="sitereporticon">
                     <i class="fa-solid fa-code"></i>
                 </div>
-                <h3>Reflective Discussion</h3>
+                <h3>Reflective Discussion & Module Experience</h3>
             </div>
 
-            <div class="site-card-content">
+            <div class="sitereportcontent">
                 <p>
-                    Embarking on this web development module has been a transformative journey, shifting my
-                    perspective from a digital consumer to a digital creator.
+                    The web development module has been a transformative and progressive journey, from visiting websites
+                    to actually creating one. Initially, understanding the structure of HTML5 seemed straightforward,
+                    but diving into the CSS styling made me realize the true depth of web design.
+                    One of the significant "ups" was the moment I successfully implemented the responsive grid system,
+                    seeing the layout adapt fluidly from desktop to mobile screens was incredibly satisfying.
                 </p>
-
                 <p>
-                    Debugging layout issues taught me patience, validation, and effective use of developer tools.
-                </p>
-
-                <p>
-                    Implementing Glassmorphism reinforced that coding is both technical and creative.
+                    However, the journey wasn't always an easy road. Debugging CSS specificity issues was a major
+                    challenge.
+                    I spent hours wondering why a style wasn't applying, and learned many things in the process.
+                    Learning to use the browser's Developer Tools was a turning point as it taught me to inspect
+                    elements
+                    and experiment with styles in real time. This module has taught me that patience and systematic
+                    debugging are just
+                    as important
+                    as writing code. The iterative process of coding, breaking, fixing, and refining has built my
+                    resilience and
+                    technical problem-solving skills.
                 </p>
             </div>
         </div>
 
         <!-- Design Process -->
-        <div class="site-glass-card">
-            <div class="site-card-header">
-                <div class="site-icon-box">
+        <div class="sitereportcard">
+            <div class="sitereportheader">
+                <div class="sitereporticon">
                     <i class="fa-solid fa-palette"></i>
                 </div>
                 <h3>Design Process & UI Decisions</h3>
             </div>
 
-            <div class="site-card-content">
+            <div class="sitereportcontent">
                 <p>
-                    <strong>Theme & Color Palette:</strong> Dark theme with sky-blue accents.
+                    <strong>Theme & Color Palette:</strong> I chose a dark, modern tailored theme (`#0f172a` background)
+                    paired
+                    with a vibrant sky-blue accent (`#38bdf8`) to create a professional modern aesthetic.
                 </p>
 
                 <p>
-                    <strong>Typography:</strong> Inter font for clarity and readability.
+                    <strong>Glassmorphism:</strong> To add depth and a modern touch, I utilized "Glassmorphism" for
+                    cards and containers.
+                    By using semi-transparent backgrounds with `backdrop-filter: blur()`, I achieved a sleek looking
+                    design that looks premium and standard.
                 </p>
 
                 <p>
-                    <strong>UI Elements:</strong> Glassmorphism using transparency and blur.
+                    <strong>Typography:</strong> I selected the 'Inter' font family for its clean lines and excellent
+                    readability across
+                    different screen sizes. It complements the technical nature of the portfolio. The layout relies
+                    heavily on CSS Grid
+                    and Flexbox to ensure alignment and consistency. Furthermore, few other fonts were also used here
+                    and there for matching the respective contents.
+                </p>
+
+                <p>
+                    <strong>Influences:</strong> The design was influenced by modern SaaS landing pages and dark-themed
+                    developer portfolios
+                    seen on platforms like Dribbble and Awwwards, where the use of glassmorphism and dark themes are
+                    trending.Furthermore, the design was also inspired by the Apple official website.
                 </p>
             </div>
         </div>
 
         <!-- Validation -->
-        <div class="site-glass-card">
-            <div class="site-card-header">
-                <div class="site-icon-box">
+        <div class="sitereportcard">
+            <div class="sitereportheader">
+                <div class="sitereporticon">
                     <i class="fa-solid fa-check-double"></i>
                 </div>
                 <h3>Validation & Testing</h3>
             </div>
 
-            <div class="site-card-content">
+            <div class="sitereportcontent">
                 <p>
-                    All pages were validated using W3C HTML and CSS validators.
+                    The code quality was a priority so all HTML and CSS files were validated using the W3C Validation
+                    Service.
+                    I addressed errors related to unclosed tags and missing alt attributes. The site was tested on
+                    various devices through the browser's developer tools.
                 </p>
 
-                <div class="site-validation-grid">
-                    <div class="site-validation-box">
+                <div class="sitereportvalidationgrid">
+                    <div class="sitereportdot">
                         <p>HTML Validations</p>
                         <div class="htmlchecker">
                             <span>Home page</span>
-                            <img src="./images/indexhtml.png" alt="">
+                            <img src="./images/indexhtml.png" alt="Index Validation">
                             <span>Projects page</span>
-                            <img src="./images/projects.png" alt="">
-                            <span>About me page</span>
-                            <img src="./images/aboutme.png" alt="">
+                            <img src="./images/projects.png" alt="Project Validation">
+                            <span>Video Demo page</span>
+                            <img src="./images/aboutme.png" alt="Video Demo Validation">
                             <span>Site Report page</span>
-                            <img src="./images/sitereport.png" alt="">
+                            <img src="./images/sitereport.png" alt="Report Validation">
                             <span>Contact page</span>
-                            <img src="./images/contact.png" alt="">
-                            
-
-
+                            <img src="./images/contact.png" alt="Contact Validation">
+                            <span>Menu page</span>
+                            <img src="./images/menu.png" alt="Menu Validation">
                         </div>
                     </div>
 
-                    <div class="site-validation-box">
+                    <div class="sitereportdot">
                         <p>CSS Validation</p>
-                        <!-- used html checker for css too because it centers the image -->
-                        <div class="htmlchecker"> 
-                            <img src="./images/csssvalidator.png" alt="">
+                        <div class="htmlchecker">
+                            <img src="./images/csssvalidator.png" alt="CSS Validation">
                         </div>
                     </div>
                 </div>
@@ -133,48 +159,52 @@
         </div>
 
         <!-- Video -->
-        <div class="site-glass-card">
-            <div class="site-card-header">
-                <div class="site-icon-box">
+        <div class="sitereportcard">
+            <div class="sitereportheader">
+                <div class="sitereporticon">
                     <i class="fa-solid fa-video"></i>
                 </div>
                 <h3>Video Demonstration</h3>
             </div>
 
-            <div class="site-card-content site-center">
-                <p>A walkthrough of the website features can be viewed here:</p>
-                <p>https://www.youtube.com/watch?v=Bm5iA4Zupek&list=RDBm5iA4Zupek&start_radio=1</p>
-                <a href="https://www.youtube.com/watch?v=Bm5iA4Zupek&list=RDBm5iA4Zupek&start_radio=1" class="site-portfoliobtn">Click here for the video</a>
+            <div class="sitereportcontent sitereportcenter">
+                <p>A comprehensive walkthrough of the website features, design decisions, and code structure can be
+                    viewed here:</p>
+                <p><a
+                        href="https://www.youtube.com/watch?v=Bm5iA4Zupek&list=RDBm5iA4Zupek&start_radio=1">https://www.youtube.com/watch?v=Bm5iA4Zupek</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=Bm5iA4Zupek&list=RDBm5iA4Zupek&start_radio=1"
+                    class="siteportfoliobtn">Watch on YouTube</a>
             </div>
         </div>
 
     </div>
 
-     <footer class="site-footer">
+    <footer class="mainfooter">
 
-        <div class="footer-grid">
+        <div class="footergrid">
 
 
-            <div class="footer-col">
+            <div class="footerbox">
                 <h4>About</h4>
                 <p>This website was created as part of a web development module and demonstrates layout, validation, and
                     responsive design.</p>
             </div>
 
 
-            <div class="footer-col">
+            <div class="footerbox">
                 <h4>Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Site Report</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="videoDemo.html">Video Demo</a></li>
+                    <li><a href="sitereport.html">Site Report</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
 
-            <div class="footer-col">
+            <div class="footerbox">
                 <h4>Contact</h4>
                 <p>Email: samrat.20251089@nami.edu.np</p>
                 <p>Location:Lalitpur, Nepal</p>
@@ -185,8 +215,9 @@
         </div>
 
 
-        <p class="footer-copy">© 2026 Samrat Tamrakar. All rights reserved.</p>
+        <p class="footertrademark">© 2026 Samrat Tamrakar. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>
